@@ -4,7 +4,7 @@ include StrongTyping
 
 class TS_StrongTyping < Test::Unit::TestCase
   def test_version
-    assert_equal('2.0.7', StrongTyping::VERSION)
+    assert_equal('3.0.0', StrongTyping::VERSION)
   end
 
   def test_expect
@@ -90,7 +90,7 @@ def optional2(a, b)
 end
 
 # useful, but demonstrates it works
-def add (*args)
+def add(*args)
   overload(args) { return }
   overload(args, Integer, Integer) { | a, b | return }
   overload(args, String, String)   { | a, b | return }

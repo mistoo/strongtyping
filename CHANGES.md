@@ -1,3 +1,12 @@
+## 3.0.0 - 24-Apr-2025
+* Updated for Ruby 3.x.
+* Replaced deprecated RSTRING_PTR/RSTRING_LEN/RARRAY_PTR/RARRAY_LEN macros with direct accessor functions.
+* Updated RARRAY and VALUE accessor functions for Ruby 3.x API.
+* Fixed rb_rescue2 signature to use two-argument rescue function.
+* Replaced deprecated rb_str_new2 with rb_str_new_cstr.
+* Updated formatting to use PRIsVALUE for VALUE printing.
+* Bumped version to 3.0.0.
+
 ## 2.0.7 - 1-Sep-2011
 * Code reorganized, Rakefile added, CHANGES file added.
 * Updated gemspec. Removed old has_rdoc call, added license.

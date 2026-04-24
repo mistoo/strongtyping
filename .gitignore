@@ -2,3 +2,5 @@
 Makefile
 *.bundle
 *.o
+*.so
+*~
